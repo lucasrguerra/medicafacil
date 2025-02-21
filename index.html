@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medica Fácil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/index.js"></script>
+</head>
+<body>
+    <header class="bg-white py-2 px-4 shadow-md text-center py-4">
+        <h1 class="text-2xl font-semibold">Medica Fácil</h1>
+    </header>
+    
+    <main class="text-center py-4 max-w-md mx-auto">
+        <section class="">
+            <h2 class="text-2xl font-semibold">Seja bem-vindo ao Medica Fácil</h2>
+            <p class="">O Medica Fácil é um sistema de cálculo automático de medicamentos para pacientes com tubercoluse.</p>
+        </section>
+
+        <section class="pt-8">
+            <label class="block text-lg font-semibold">Informe o peso do paciente (kg):</label>
+            <input
+                id="peso"
+                type="number"
+                class="py-2 px-4 border-2 border-gray-300 rounded-full w-64"
+                placeholder="Peso do paciente"
+            >
+
+        </section>
+
+        <section class="pt-2">
+            <label class="block text-lg font-semibold">Selecione a fase:</label>
+            
+            <select
+                id="fase"
+                class="py-2 px-4 border-2 border-gray-300 rounded-full w-64"
+            >
+                <option value="intensiva">Intensiva</option>
+                <option value="manutençcao">Manutenção</option>
+            </select>
+        </section>
+
+        <section class="pt-2">
+            <p class="text-lg font-semibold">
+                Quantidade de medicamentos:
+                <span class="text-red-500" id="resultado"></span>
+            </p>
+
+            <p class="text-lg font-semibold">Descrição:</p>
+            <p class="" id="descricao"></p>
+        </section>
+    </main>
+</body>
+</html>
